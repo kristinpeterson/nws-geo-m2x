@@ -40,7 +40,7 @@ heroku config:set GOOGLE_API_KEY={YOUR-GOOGLE-API-KEY}
 
 [Django Secret Key](https://docs.djangoproject.com/en/1.9/ref/settings/#secret-key):
 ```
-heroku config:set DJANGO_SECRET_KEY={UNIQUE-UNPREDICTABLE-VALUE}
+heroku config:set DJANGO_SECRET_KEY={ANY-UNIQUE-UNPREDICTABLE-VALUE}
 ```
 
 
