@@ -25,28 +25,13 @@ Click the Heroku button to deploy your application to Heroku:
 
 ### Setup Config Variables in Heroku
 
-#### Via Heroku CLI
-(requires [Heroku Toolbelt](https://toolbelt.heroku.com/))
+Once you deploy the application to Heroku you will be prompted to supply the following environment variables:
 
-[M2X Master API Key](https://m2x.att.com/developer/documentation/v2/overview#API-Keys):
-```
-heroku config:set M2X_API_KEY={YOUR-M2X-MASTER-API-KEY}
-```
+* [M2X Master API Key](https://m2x.att.com/developer/documentation/v2/overview#API-Keys): use your M2X Master API key which provides access to your M2X resources
 
-[Google API Key](https://developers.google.com/maps/documentation/geocoding/get-api-key):
-```
-heroku config:set GOOGLE_API_KEY={YOUR-GOOGLE-API-KEY}
-```
+* [Google API Key](https://developers.google.com/maps/documentation/geocoding/get-api-key): use your Google API Key, or create one, this is used when looking up the county and state via lat/lng
 
-[Django Secret Key](https://docs.djangoproject.com/en/1.9/ref/settings/#secret-key):
-```
-heroku config:set DJANGO_SECRET_KEY={ANY-UNIQUE-UNPREDICTABLE-VALUE}
-```
-
-
-#### Via Heroku Dashboard
-
-You can also [edit config vars](https://devcenter.heroku.com/articles/config-vars#setting-up-config-vars-for-a-deployed-application) on your app’s settings tab on your Heroku Dashboard.
+* [Django Secret Key](https://docs.djangoproject.com/en/1.9/ref/settings/#secret-key): any sufficiently random and unique key, per Django web framework requirements.
 
 ### Database Initialization
 
