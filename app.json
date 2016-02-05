@@ -1,0 +1,17 @@
+{
+  "name": "NWS FIPS & UGC Geocodes to M2X",
+  "description": "Update M2X Device with FIPS6 and UGC on Location Change.",
+  "repository": "https://github.com/kristinpeterson/nws-geo-m2x",
+  "keywords": ["python", "m2x"],
+  "env": {
+    "M2X_API_KEY": {
+      "description": "Your M2X Master API Key, for accessing your M2X resources."
+    },
+    "GOOGLE_API_KEY": {
+      "description": "Your Google API Key, for accessing the Geocoder API."
+    },
+    "DJANGO_SECRET_KEY": {
+      "description": "A secret key for a particular Django installation. This is used to provide cryptographic signing, and should be set to a unique, unpredictable value."
+    }
+  }
+}
